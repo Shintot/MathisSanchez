@@ -1,0 +1,240 @@
+
+
+.header {
+    background-color: #b2e1f7;
+    padding: 1rem 8rem 1rem 8rem;
+    position: relative;
+    z-index: 1000;
+    
+    &__titre {
+        color: white;
+        width: 7%;
+    }
+
+    &__btn {
+        color: white;
+        margin-right: 1.2rem;
+    }
+}
+
+.presentation {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f6f6f6;
+
+    &__image {
+        width: 50%;
+    }
+}
+
+.moi {
+    background-color: #b2e1f7;
+    padding: 1rem 15rem 1rem 15rem;
+    
+    font-family: Roboto;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.btnlien {
+    padding: 0 8rem 0 8rem
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+
+$button-color: #4A90E2;
+$transition-time: 750ms;
+
+.container {
+  
+  font-family: 'Droid Serif', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  text-decoration: none;
+  color: #fff;
+  background-color: lighten($button-color, 10%);
+  padding-left: 2rem;
+  overflow: hidden;
+  z-index: 1;
+  align-items: center;
+  box-shadow: 0px 3px 4px -4px rgba(0,0,0,0.75);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: 100%;
+    background-color: $button-color;
+    z-index: -1;
+    transition: transform $transition-time;
+  }
+  
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+    padding: 1rem;
+    overflow: hidden;
+    background-color: $button-color;
+  }
+  
+  svg {
+    max-width: 20px;
+    width: 100%;
+    height: auto;
+    max-height: 18px;
+    fill: white;
+  }
+  
+  &:hover {
+    
+    &::before {
+      transform: scaleX(1);
+    }
+    
+    svg {
+      animation: moveArrow $transition-time;
+    }
+    
+  }
+  
+}
+
+@keyframes moveArrow {
+  
+  0% {
+    transform: translateX(0px);
+  }
+  
+  49% {
+    transform: translateX(50px);
+  }
+  
+  50% {
+    transform: translateX(-50px);
+  }
+  
+  100% {
+    transform: translateX(0px);
+  }
+  
+}
+
+.cardc{
+    height:15rem;
+    width:20rem;
+    margin-left: 1.7rem;
+    font-size:1.1rem;
+    margin-top: 2rem;
+    border-radius:1rem;
+    box-shadow:3px 3px 10px #c0b9b9;
+    transition:.3s linear;
+    
+  &:hover{
+    cursor:pointer;
+    box-shadow:5px 5px 10px darken(#c0b9b9,10%);
+    transform:translateY(-5px);
+  }
+  
+    &__heading {
+      position:relative; 
+      bottom:1.5rem;
+      text-align: center;
+      
+      
+    }
+    
+    &__description {
+      position:relative; 
+      bottom:1.9rem
+    }
+  
+  &__picture-box{
+    width:100%;
+    height:85%;
+  }
+  
+  &__picture{
+    width:100%;
+    height:80%;
+    border-radius:1rem 1em 0 0;
+    object-fit:cover;
+  }
+  
+  &__body{
+    padding-left:1rem;
+    width:80%;
+    font-size: 0.7rem
+      
+  }
+  
+  }
+
+  
+  @media (min-width: 1200px) {
+  .cartes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding: 10rem 5rem 2rem 9rem;
+    
+  }}
+  
+
+ 
+ .parcours {
+  background-color: #b2e1f7 ;
+  height: 65rem;
+  margin-top: 10rem;
+  padding: 5rem 5rem 5rem 5rem;
+
+  &__apropo {
+    color: white;
+  }
+
+  &__apropotexte {
+    color: white;
+  }
+
+  &__lienGC {
+    color: rgb(209, 209, 0);
+    cursor: pointer;
+  }
+
+  &__contenant {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 15px;
+    padding: 20px;
+    height: auto;
+    width: 35%;
+    background-color: #6b6bb4;
+    border-radius: 15px;
+  }
+
+  &__texte{
+    position: absolute;
+    margin: 7px;
+  }
+  
+ }
+
+
+
+
+  
+

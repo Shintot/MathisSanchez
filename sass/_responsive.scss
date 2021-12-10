@@ -1,0 +1,116 @@
+@media screen and (min-width: 414px ) and (max-width:736px)  {
+
+.header {
+    padding: 0;
+
+    &__titre {
+        width: 20%;
+        margin-left: 40%;
+    }
+
+    &__contenant {
+        display: none;
+    }
+}
+.btnlien {
+    padding: 1rem 0 1rem 0;
+}
+
+.content{
+    padding-bottom: 1rem;
+}
+
+.presentation__image{
+    width: 100%;
+}
+
+.moi {
+    padding: 0;
+
+    &__texte {
+        padding-top: 2rem;
+        margin: 0;
+    }
+}
+
+.cartes {
+    margin-left: 1rem;
+    margin-top: 7rem;
+}
+
+.parcours {
+    margin-top: 5rem;
+    padding: 5rem 5rem 5rem 1rem;
+
+    &__contenant {
+        width: 97%;
+    }
+
+    &__apropotexte {
+        text-align: justify;
+        font-size: 17px;
+        margin-bottom: 3rem; 
+    }
+}
+}
+
+@media screen and (min-width: 375px ) and (max-width:667px)  {
+
+    .header {
+        padding: 0;
+    
+        &__titre {
+            width: 20%;
+            margin-left: 40%;
+        }
+    
+        &__contenant {
+            display: none;
+        }
+    }
+    .btnlien {
+        padding: 1rem 0 1rem 0;
+    }
+    
+    .content{
+        padding-bottom: 1rem;
+    }
+    
+    .presentation__image{
+        width: 100%;
+    }
+    
+    .moi {
+        padding: 0;
+    
+        &__texte {
+            padding: 2rem;
+            margin: 0;
+        }
+    }
+    
+    .cartes {
+       
+        margin-top: 7rem;
+    }
+    
+    .parcours {
+        margin-top: 5rem;
+        padding: 2rem 2rem 5rem 1rem;
+    
+        &__contenant {
+            width: 85%;
+        }
+
+        &__apropo {
+            margin-left: 1.5rem;
+        }
+
+        &__apropotexte {
+            text-align: justify;
+            font-size: 17px;
+            margin-bottom: 3rem; 
+            margin-left: 1.5rem;
+        }
+    }
+    }

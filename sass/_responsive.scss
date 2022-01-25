@@ -39,7 +39,7 @@
 }
 
 .parcours {
-    margin-top: 5rem;
+    margin-top: 7rem;
     padding: 5rem 5rem 5rem 1rem;
 
     &__contenant {
@@ -68,6 +68,7 @@
             display: none;
         }
     }
+
     .btnlien {
         padding: 1rem 0 1rem 0;
     }
@@ -95,8 +96,10 @@
     }
     
     .parcours {
-        margin-top: 5rem;
+        margin-top: 7rem;
         padding: 2rem 2rem 5rem 1rem;
+        height: 92rem;
+        
     
         &__contenant {
             width: 85%;
@@ -106,6 +109,10 @@
             margin-left: 1.5rem;
         }
 
+        &__apropomarge {
+            margin: 0;
+        }
+
         &__apropotexte {
             text-align: justify;
             font-size: 17px;
@@ -113,4 +120,45 @@
             margin-left: 1.5rem;
         }
     }
+
+    .pong-loader {
+        margin-top: 6rem !important;
+        margin-bottom: 6rem !important;
     }
+    }
+
+@media screen and (min-width: 768px ) and (max-width:1024px) {
+.cartes {
+    margin-left: 20rem;
+    margin-top: 10rem;
+}
+
+.moi {
+    padding: 1rem 5rem 1rem 5rem;
+}
+
+.parcours__apropomarge {
+    margin-left: 5rem;
+  }
+
+.parcours__contenant{
+    width: 90%;
+}
+
+.header {
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.parcours__apropotexte {
+    text-align: justify;
+}
+}
+
+@media screen and (min-width: 1024px) {
+    .parcours {
+        background-color: #7c8cc2;
+        height: 45rem;
+        display: flex;
+        padding: 5rem 13rem 0rem 10rem;
+    }
+}

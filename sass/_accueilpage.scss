@@ -1,7 +1,8 @@
 
 
 .header {
-    background-color: #b2e1f7;
+    background-color: #7c8cc2;
+    
     padding: 1rem 8rem 1rem 8rem;
     position: relative;
     z-index: 1000;
@@ -20,17 +21,24 @@
 .presentation {
     padding: 2rem;
     text-align: center;
-    background-color: #f6f6f6;
 
     &__image {
-        width: 50%;
+        width: 40%;
+    }
+
+    &__video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -01;
     }
 }
 
 .moi {
-    background-color: #b2e1f7;
+    background-color: #7c8cc2;
     padding: 1rem 15rem 1rem 15rem;
-    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     font-family: Roboto;
     text-align: center;
     color: white;
@@ -140,7 +148,7 @@ $transition-time: 750ms;
     font-size:1.1rem;
     margin-top: 2rem;
     border-radius:1rem;
-    box-shadow:3px 3px 10px #c0b9b9;
+    box-shadow:3px 3px 10px #575454;
     transition:.3s linear;
     
   &:hover{
@@ -151,6 +159,7 @@ $transition-time: 750ms;
   
     &__heading {
       position:relative; 
+      margin-left: 1.5rem;
       bottom:1.5rem;
       text-align: center;
       
@@ -186,10 +195,11 @@ $transition-time: 750ms;
   
   @media (min-width: 1200px) {
   .cartes {
+    background-color: #ccd7fc;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    padding: 10rem 5rem 2rem 9rem;
+    padding: 8rem 5rem 2rem 9rem;
     
   }}
   
@@ -198,19 +208,31 @@ $transition-time: 750ms;
  .parcours {
   background-color: #b2e1f7 ;
   height: 65rem;
-  margin-top: 10rem;
-  padding: 5rem 5rem 5rem 5rem;
+  
+  padding: 5rem 5rem -3rem 5rem;
+
+  &__apropocontent {
+    width: 100%;
+  }
 
   &__apropo {
     color: white;
   }
 
   &__apropotexte {
+    font-size: 17px;
     color: white;
+    text-align: justify;
   }
 
+  &__apropomarge {
+    margin-left: 10rem;
+  }
+  
+ 
+
   &__lienGC {
-    color: rgb(209, 209, 0);
+    color: #f59aff;
     cursor: pointer;
   }
 
@@ -221,9 +243,10 @@ $transition-time: 750ms;
     margin: 15px;
     padding: 20px;
     height: auto;
-    width: 35%;
+    width: 95%;
     background-color: #6b6bb4;
     border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 
   &__texte{
@@ -232,6 +255,118 @@ $transition-time: 750ms;
   }
   
  }
+
+ .loisir {
+   background-color: #6b6bb4;
+   padding: 0.5rem;
+   height: 50rem;
+   
+
+   &__titre {
+     color: white;
+     text-align: center;
+   }
+
+   &__image {
+     width: 5%;
+   }
+
+   &__bordure {
+     position: absolute;
+     bottom: 10rem;
+   }
+ }
+
+ /* CARTE DES TEMPLATES */
+
+ .template {
+  margin: 4rem 3rem 1rem 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 80%;
+
+    &__contenantimage {
+      position: relative;
+      width: 100%;
+    }
+
+    &__image {
+      display: block;
+      cursor: pointer;
+      object-fit: cover;
+      height: 300px;
+    width: 100%;
+    }
+
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(136, 128, 128, 0.425);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+
+    &__overlay > * {
+      transform: translateY(20px);
+      transition: transform 0.25s;
+    }
+
+    &__overlay:hover {
+      opacity: 1;
+    }
+
+    &__overlay:hover > * {
+      transform: translateY(0px);
+    }
+
+    &__overlay--blur{
+      backdrop-filter: blur(5px);
+
+    }
+
+    
+
+    &__titre {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    &__description {
+      font-size: 1.25em;
+      margin-top: 0.25em;
+    }
+ }
+
+ .vague {
+  margin-bottom: -4px;
+  z-index: 80;
+  background-color: #ccd7fc;
+ }
+
+ .vague2 {
+  margin-bottom: -5px;
+  background-color: #7c8cc2;
+ }
+
+ .vague3 {
+   background-color: #7c8cc2;
+ }
+
+ .autre {
+   height: 25rem;
+   margin-top: -5px;
+   background-color: #7c8cc2;
+ }
+
+ 
 
 
 
